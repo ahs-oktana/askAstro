@@ -1,4 +1,4 @@
 <aura:component >
   <aura:attribute name='state' type='object'/>
-  <div class="titleStyle">{!v.state.name}</div>
+  <div class="titleStyle">Article name: {!v.state.name}</div>
 </aura:component>
