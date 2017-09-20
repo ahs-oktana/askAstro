@@ -1,0 +1,13 @@
+<aura:component>
+	<aura:attribute name='state' type='object'/>
+
+	<div class='slds-p-around--large'>
+		
+		<c:askastro_SearchBox query='{!v.state.query}'/>
+
+		<aura:if isTrue='{! v.state.finished }'>
+			<c:askastro_SearchResults results='{!v.state.result}'/>
+		</aura:if>
+
+	</div>
+</aura:component>

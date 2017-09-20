@@ -1,0 +1,6 @@
+<aura:component>
+	<aura:attribute name='state' type='object'/>
+
+	<br/>
+	<b>Search Child Container</b> - v.query : {!v.state.query}
+</aura:component>

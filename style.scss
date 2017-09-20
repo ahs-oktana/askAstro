@@ -1,0 +1,49 @@
+
+$imgUrl: url('astroPNG');
+$titleSize: 30px;
+
+html{
+  background-image: $imgUrl;
+  height: auto;
+  width: auto;
+  background-position:left top;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
+
+.breadcrumbsFrame{
+  background-color: rgba(193, 193, 220, 0.72);
+  padding: 0 10px;
+  margin: 5px;
+  p .breadcrumbsTitle{
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
+
+ul.searchList{
+  a.searchLink{
+    color: #FFFFFF;
+    background: rgba(255, 255,255, 0.26);
+    margin: 1px;
+    border-radius: 3px;
+      &:hover{
+        color: rgb(241, 166, 166);
+      }
+  }
+  background: transparent;
+}
+
+.titleStyle{
+  color: #FFFFFF;
+  text-align: center;
+  font-size: $titleSize;
+    @media only screen and (max-width: 500px){
+      font-size: $titleSize/2;
+      font-family: inherit;
+    }
+  font-family: fantasy;
+}

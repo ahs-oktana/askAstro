@@ -1,0 +1,6 @@
+<aura:component >
+	<aura:attribute name='query' type='String'/>
+
+	<ui:inputText keypress="{!c.handleSearchBoxKeyPress}" class='slds-input' value="{!v.query}" updateOn="keyup" placeholder="Entry something"/>  
+
+</aura:component>

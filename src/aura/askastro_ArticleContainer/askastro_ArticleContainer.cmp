@@ -1,0 +1,5 @@
+<aura:component>
+	<aura:attribute name='state' type='object'/>
+
+	<c:askastro_Article name='{!v.state.name}' description='{!v.state.description}'/>
+</aura:component>

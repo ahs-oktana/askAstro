@@ -1,0 +1,19 @@
+<aura:component extends='c:askastro_Store'>
+
+	<div class="">
+		<div class="breadcrumbsFrame"><p class="breadcrumbsTitle">{!v.store.router.state}</p></div>
+		<br/>
+
+	    <c:askastro_Route cmpName='c:askastro_SearchContainer' routerState='{!v.store.router.state}' path='/search' state='{!v.store.search}'>
+
+	    <c:askastro_Route cmpName='c:askastro_SearchChildContainer' routerState='{!v.store.router.state}' path='/child' state='{!v.store.search}'/>
+
+	    </c:askastro_Route>
+
+	    <c:askastro_Route cmpName='c:askastro_ArticleContainer' routerState='{!v.store.router.state}' path='/article/:id' state='{!v.store.article}' exact='true'/>
+
+			<c:askastro_Route cmpName='c:askastro_ArticleTitleContainer' routerState='{!v.store.router.state}' path='/article/:id/title' state='{!v.store.article}'/>
+
+	    <c:askastro_Route cmpName='c:askastro_FlagArticle' routerState='{!v.store.router.state}' path='/article/:id/flag' state='{!v.store.article}'/>
+	</div>
+</aura:component>

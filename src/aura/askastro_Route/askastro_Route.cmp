@@ -1,0 +1,26 @@
+<aura:component>
+	<aura:attribute name='state' type='Object'/>
+	<aura:registerEvent name="askastro_init" type="c:askastro_init"/>
+
+
+	<!--Routing parameters-->
+	<aura:attribute name='cmpName' type='String'/>
+	<aura:attribute name='path' type='String'/>
+	<aura:attribute name='parentPath' type='String' default=''/>
+	<aura:attribute name='routerState' type='String'/>
+	<aura:attribute name='exact' type='Boolean' default='false'/>
+
+	<!--Others-->
+	<aura:attribute name='errorMsg' type='String'/>
+	<aura:attribute name='componentIsBeingCreated' type='Boolean' default='false'/>
+	<aura:attribute name='componentAlreadyRendered' type='Boolean' default='false'/>
+
+
+	<aura:method name="renderRoute" action="{!c.renderComponent}" description="Render the route component"/>
+
+	<aura:handler name='change' value='{!v.routerState}' action='{!c.routerStateChanged}' />
+	<aura:handler name='change' value='{!v.state}' action='{!c.stateChanged}' />
+
+ 	{!v.errorMsg}
+	{!v.body}
+</aura:component>

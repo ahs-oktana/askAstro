@@ -1,0 +1,23 @@
+<aura:component>
+  <!-- Response Attribute -->
+  <aura:attribute name="results"
+    type="Object[]"/>
+
+  <!-- Results List -->
+  <div class="slds-grid">
+    <div class='slds-size--2-of-2'>
+      <ul class="slds-has-block-links--space searchList" >
+        <aura:iteration items='{!v.results}' var='result' indexVar='index'>
+          <a class="slds-p-around--small linkbg searchLink" >
+            <li onclick='{!c.goToArticle}'
+            data-id="{!result.id}"
+             >
+              <ui:outputText value="{!result.name}" />
+            </li>
+          </a>
+        </aura:iteration>
+      </ul>
+    </div>
+  </div>
+
+</aura:component>

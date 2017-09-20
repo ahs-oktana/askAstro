@@ -1,0 +1,18 @@
+{
+    "projectName": "askAstro",
+    "username": "adia@adia.training.oktana.io.qa",
+    "id": "7177a1b0-9721-11e7-8938-bdf9ebda173f",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://testing123--qa.cs66.my.salesforce.com",
+    "workspace": "/Users/adiaherrera/Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "AuraDefinitionBundle",
+        "StaticResource"
+    ]
+}

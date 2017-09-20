@@ -1,0 +1,12 @@
+<aura:component extensible='true'>
+	<!--Redux Store-->
+	<aura:handler event="aura:locationChange" action="{!c.update}"/>
+	<aura:handler event="c:askastro_init" action="{!c.handleInit}"/>
+	<aura:attribute name='store' type='Object'/>
+	<aura:attribute name='storeIsLoaded' type='Boolean' default='false'/>
+    <ltng:require scripts="{!$Resource.askAstro}"
+                  afterScriptsLoaded="{!c.afterStoreScriptLoaded}"/>
+		<ltng:require styles="{!$Resource.astroStyles}" />
+    <!--***********-->
+    	{!v.body}
+</aura:component>
